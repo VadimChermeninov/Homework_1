@@ -17,3 +17,8 @@ class Storage:
             del self.dict[post_id]
         else:
             print("No such post")
+      def edit_post(self, post_id:str):
+        if post_id in self.dict:
+            self.dict[post_id]=post
+        else:
+            print("No such post")
